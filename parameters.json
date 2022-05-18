@@ -1,0 +1,43 @@
+{
+	map = {
+		url = "https://www.openstreetmap.org/export#map=16/23.1399/-82.3868",
+		coordinates = "-82.3929, -82.3829, 23.1357, 23.1434"
+	},
+	weather = {
+		url = "https://openweathermap.org/city/3553478"
+	},
+	traffic_conditions = {
+		maximum_cycle = 120,
+		minimum_cycle = 35,
+		distance_between_vehicles = 1,
+		speed_people = 3,
+		speed_vehicle = {
+			motor = {
+				primary = 60,
+				secondary = 60,
+				motorway = 70
+			},
+			car = {
+				primary = 90,
+				secondary = 100,
+				motorway = 100
+			},
+			bus = {
+				primary = 90,
+				secondary = 90,
+				motorway = 100
+			},
+			articulated = {
+				primary = 80,
+				secondary = 90,
+				motorway = 90
+			},
+			
+		}
+	},
+	probabilities = {
+		red_violation = 0.0005,
+		stop_violation = 0.002,
+		obstacles = 0.02
+	}
+}
